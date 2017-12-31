@@ -2493,7 +2493,7 @@ include("head.inc");
                           <td>
                             <select name="dhcp6-ia-pd-len" class="selectpicker" data-style="btn-default" id="dhcp6-ia-pd-len">
 <?php
-                            foreach(array("none" => "None", 16 => "48", 12 => "52", 8 => "56", 4 => "60", 2 => "62", 1 => "63", 0 => "64") as $bits => $length):?>
+                            foreach(array("none" => "None", 16 => "48", 12 => "52", 8 => "56", 5 => "59", 4 => "60", 2 => "62", 1 => "63", 0 => "64") as $bits => $length):?>
                               <option value="<?=$bits;?>" <?=$bits == $pconfig['dhcp6-ia-pd-len'] ? "selected=\"selected\"" : "";?>>
                                   <?=$length;?>
                               </option>
